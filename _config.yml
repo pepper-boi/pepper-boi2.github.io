@@ -9,6 +9,7 @@ show_excerpts: true
 email: pepper_boi@icloud.com
 
 # required by disqus to display comments
+baseurl: /blog/ 
 url: https://thepepperboi.github.io
 
 # jekyll-paginate
