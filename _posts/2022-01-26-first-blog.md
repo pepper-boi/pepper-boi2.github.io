@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Review: Game of Thrones Saga'
+title: Medium Page
 tags: got review
 published: true
 ---
