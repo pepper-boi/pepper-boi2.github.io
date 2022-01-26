@@ -1,0 +1,74 @@
+remote_theme: bitbrain/jekyll-dash
+
+title: pepperboi
+
+description: >
+  I am a Godot developer who has done a lot of game jams and I am starting a blog to share my progress on jams and a larger project that I recently started.
+show_excerpts: true
+
+email: pepper_boi@icloud.com
+
+# required by disqus to display comments
+url: https://thepepperboi.github.io
+
+# jekyll-paginate
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+
+defaults:
+  -
+    scope:
+      path: "_pages"
+      type: "pages"
+    values:
+      layout: "project"
+      author: "PepperBoi"
+      category: "project
+
+# jekyll-tagging (optional)
+tag_permalink_style: pretty
+tag_page_layout: tag_page
+tag_page_dir: tag
+
+# for github pages custom domains:
+# include: [CNAME]
+
+dash:
+  # the way how dates should be displayed
+  date_format: "%b %-d, %Y"
+
+  # (optional) discqus comment configuration
+  disqus:
+    shortname: <your-disqus-shortname>  
+
+  # the animation speed of the post scroll-in effect
+  animation_speed: 50
+
+  # wether to enable Right-to-Left support or not
+  rtl: false
+
+  # Replaces the default avatar provider (gravatar)
+  #avatar_source: github
+  #github_username: bitbrain
+  #avatar_source: local
+  #avatar_path: /assets/avatar.png
+
+  # generate social links in footer
+  # supported colors: green, red, orange, blue, cyan, pink, teal, yellow, indigo, purple
+  social_links:
+    - url: nothing
+      icon: discord
+      color: blue
+    - url: https://pepperboi.itch.io
+      icon: itch-io
+      color: red
+    - url: https://github.com/thepepperboi
+      icon: github
+      color: purple
+    - url: https://github.com/thepepperboi
+      icon: medium
+      color: green
+  
+  # wether the author box should be displayed or not
+  show_author: true
