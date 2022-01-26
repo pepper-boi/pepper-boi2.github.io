@@ -15,17 +15,6 @@ url: https://thepepperboi.github.io
 paginate: 5
 paginate_path: "/blog/page:num/"
 
-
-defaults:
-  -
-    scope:
-      path: "_pages"
-      type: "pages"
-    values:
-      layout: "project"
-      author: "PepperBoi"
-      category: "project
-
 # jekyll-tagging (optional)
 tag_permalink_style: pretty
 tag_page_layout: tag_page
@@ -36,7 +25,6 @@ tag_page_dir: tag
 
 dash:
   # the way how dates should be displayed
-  date_format: "%b %-d, %Y"
 
   # (optional) discqus comment configuration
   disqus:
