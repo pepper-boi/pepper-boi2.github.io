@@ -60,3 +60,7 @@ dash:
   
   # wether the author box should be displayed or not
   show_author: true
+
+plugins:
+  - liquid-md5
+  - jekyll/tagging
