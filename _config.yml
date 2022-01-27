@@ -43,9 +43,9 @@ dash:
   # generate social links in footer
   # supported colors: green, red, orange, blue, cyan, pink, teal, yellow, indigo, purple
   social_links:
-    - url: nothing
-      icon: discord
-      color: blue
+#    - url: nothing
+#      icon: discord
+#      color: blue
     - url: https://pepperboi.itch.io
       icon: itch-io
       color: red
