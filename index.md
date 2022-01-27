@@ -4,20 +4,13 @@ layout: home
 ---
 
 
-<div class="home"> 
-    <h1 class="page-heading">Posts</h1> {{ content }}
-    
-    <ul class="post-list">
-        {% for post in paginator.posts %}
-        <li class="post-item">
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-            <div class="post-image">
-                <img class="post-image" src="{{ post.image }} " />
-            </div>
-            <h2 class="post-item-title">
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-            <div class="post-abstract">{{ post.excerpt | strip_html | truncatewords:20 }}</div>
-        </li>{% endfor %}
-    </ul>
-</div>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+      - <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+    </li>
+  {% endfor %}
+</ul>
