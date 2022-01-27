@@ -3,22 +3,18 @@ pagination: enabled: true
 layout: home
 ---
 
-<!-- {% for post in site.posts %}
+{% for post in site.posts %}
   <a>
-    <a href= "https://pepper-boi.github.io{{ post.url }}" style="font-size: 100px; text-decoration: none">
+    <a href= "https://pepper-boi.github.io{{ post.url }}" style="font-size: 40px; text-decoration: none">
       {{ post.title }}
     </a>
     <br>
+    {% for tag in post.tags %}
+      <li>
+        <a href="/{{ site.tag_page_dir }}/{{ tag | slugify: 'pretty' }}/">{{ tag }}</a>
+      </li>
+    {% endfor %}
     - <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
     <br>
   </a>
-{% endfor %} -->
-
-{% for tag in site.tags %}
-  <h3>{{ tag[0] }}</h3>
-  <ul>
-    {% for post in tag[1] %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
 {% endfor %}
