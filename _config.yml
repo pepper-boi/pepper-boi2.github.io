@@ -12,8 +12,14 @@ email: pepper_boi@icloud.com
 url: https://thepepperboi.github.io
 
 # jekyll-paginate
-paginate: 5
-paginate_path: "/page:num/"
+pagination:
+  enabled: true
+  per_page: 3
+  permalink: '/page/:num/'
+  title: ':title - page :num of :max'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
 
 # jekyll-tagging (optional)
 tag_permalink_style: pretty
