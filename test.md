@@ -3,6 +3,7 @@ layout: post
 title: Medium Page
 tags: got review
 published: true
+permalink: /about/
 ---
 
 ## A New Post
