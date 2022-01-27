@@ -7,7 +7,7 @@ layout: home
 <ul>
   {% for post in site.posts %}
     <a>
-      <a href= "https://pepper-boi.github.io{{ post.url }}">
+      <a href= "https://pepper-boi.github.io{{ post.url }}" size= 50px>
         {{ post.title }}
       </a>
       <br>
