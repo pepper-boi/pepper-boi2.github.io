@@ -24,8 +24,6 @@ tag_page_dir: tag
 # include: [CNAME]
 
 dash:
-  # the way how dates should be displayed
-
   # (optional) discqus comment configuration
   disqus:
     shortname: <your-disqus-shortname>  
