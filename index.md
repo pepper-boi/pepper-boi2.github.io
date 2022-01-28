@@ -10,7 +10,7 @@ layout: home
         {{ post.title }}
       </a>
     </a>
-      {% for tag in post.tags}
+      {% for tag in post.tags %}
         <a class="tag" href="got">{{tag}}</a>
       {% endfor %}
     <a>
