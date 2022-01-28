@@ -6,7 +6,7 @@ layout: home
 <div class="post-links">
   {% for post in site.posts %}
     <a>
-      <a href= "https://pepper-boi.github.io{{ post.url }}" style="font-size: 40px; text-decoration: none">
+      <a href= "{{ post.medium-site }}" style="font-size: 40px; text-decoration: none">
         {{ post.title }}
       </a>
       <br>
