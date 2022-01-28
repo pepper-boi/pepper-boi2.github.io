@@ -3,14 +3,16 @@ pagination: enabled: true
 layout: home
 ---
 
-{% for post in site.posts %}
-  <a>
-    <a href= "https://pepper-boi.github.io{{ post.url }}" style="font-size: 40px; text-decoration: none">
-      {{ post.title }}
+<div class="post-links">
+  {% for post in site.posts %}
+    <a>
+      <a href= "https://pepper-boi.github.io{{ post.url }}" style="font-size: 40px; text-decoration: none">
+        {{ post.title }}
+      </a>
+      <br>
+      <a class="tag" href="got">got</a>
+      - <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+      <br>
     </a>
-    <br>
-    <a class="tag" href="got">got</a>
-    - <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
-    <br>
-  </a>
-{% endfor %}
+  {% endfor %}
+</div>
