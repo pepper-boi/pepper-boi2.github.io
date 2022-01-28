@@ -10,7 +10,10 @@ layout: home
         {{ post.title }}
       </a>
       <br>
-      <a class="tag" href="got">got</a>
+      
+      {% for tag in post.tags}
+        <a class="tag" href="got">{tag}</a>  
+      {% endfor %}
       - <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
       <br>
     </a>
