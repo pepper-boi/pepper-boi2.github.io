@@ -10,9 +10,7 @@ layout: home
     </a>
     <br>
     {% for tag in post.tags %}
-      <li>
-        <a href="/{{ site.tag_page_dir }}/{{ tag | slugify: 'pretty' }}/">{{ tag }}</a>
-      </li>
+      <a href="/{{ site.tag_page_dir }}/{{ tag | slugify: 'pretty' }}/">{{ tag }}</a>
     {% endfor %}
     - <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
     <br>
