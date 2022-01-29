@@ -4,7 +4,7 @@ layout: home
 ---
 <h1>recent articles</h1>
 <div class="post-links">
-      {% for post in site.posts %}
+      {% for post in pragnation.posts %}
 <div class="post-link-wrapper">
 <a href="{{ post.url | relative_url }}" class="post-link">{{ post.title }}</a>
 <div class="post-meta">
