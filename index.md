@@ -1,6 +1,5 @@
 ---
 pagination: enabled: true
-permalink: ""
 layout: home
 ---
 
