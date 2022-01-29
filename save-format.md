@@ -1,10 +1,11 @@
 ---
 pagination: enabled: true
+permalink: ""
 layout: home
 ---
 
 <div class="post-links">
-  {% for post in site.posts %}
+  {% for post in pagination.posts %}
     
     <div class="post-links">
       <a href= "{{ post.medium-site }}" style="font-size: 40px; text-decoration: none">
