@@ -70,3 +70,5 @@ plugins:
  - jekyll-paginate
  - liquid-md5
  - jekyll/tagging
+
+theme: jekyll-theme-time-machine
